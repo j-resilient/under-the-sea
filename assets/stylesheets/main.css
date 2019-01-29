@@ -46,3 +46,80 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*
+	#######################################################
+	Body
+	#######################################################
+*/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.container {
+	margin: 0;
+}
+/*
+	#######################################################
+	Flexbox
+	#######################################################
+*/
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+}
+.flex-start {
+	/*margin-right: auto;
+	margin-left: auto;*/
+}
+.flex-end {
+	display: flex;
+	justify-content: space-around;
+
+}
+.flex-end li {
+	padding: 0 20px;
+}
+/*
+	########################################################
+	Header and Navbar
+	########################################################
+*/
+header {
+	transition: background-color 0.5s ease;
+	background-color: #FFAFB5;
+	background: linear-gradient(to right, #C9F1F1, #FFE7B3, #FFAFB5);
+}
+li:hover {
+	background-color: #F99691;
+}
+.dropdown-L2 a {
+	visibility: hidden;
+	display: none;
+}
+.dropdown:hover .dropdown-L2 a {
+	display: block;
+	visibility: visible;
+}
+/*
+	########################################################
+	Typography
+	########################################################
+*/
+h1, li {
+	text-transform: uppercase;
+	line-height: 102px;
+}
+li {
+	font-size: 18px;
+}
+h1 {
+	font-size: 36px;
+}
+/*
+	#########################################################
+	Links
+	#########################################################
+*/
+a {
+	text-decoration: none;
+	color: black;
+}
