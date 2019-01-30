@@ -66,10 +66,6 @@ table {
 	display: flex;
 	justify-content: space-around;
 }
-.flex-start {
-	/*margin-right: auto;
-	margin-left: auto;*/
-}
 .flex-end {
 	display: flex;
 	justify-content: space-around;
@@ -84,6 +80,7 @@ table {
 	########################################################
 */
 header {
+	height: 102px;
 	transition: background-color 0.5s ease;
 	background-color: #FFAFB5;
 	background: linear-gradient(to right, #C9F1F1, #FFE7B3, #FFAFB5);
@@ -91,11 +88,26 @@ header {
 li:hover {
 	background-color: #F99691;
 }
-.dropdown-L2 a {
+.l2-item {
 	visibility: hidden;
 	display: none;
 }
-.dropdown:hover .dropdown-L2 a {
+/* for testing purposes use below, remove display:none and visibility: hidden*/
+/*.dropdown-L2 {
+	border: solid red 1px;
+}*/
+.dropdown-L3 {
+	position: relative;
+}
+.level3 {
+	position: absolute;
+	left: 110%;
+	top: 0;
+	border: solid black 1px;
+	display: none;
+	visibility: hidden;
+}
+.dropdown:hover .l2-item, .dropdown-L3:hover .level3 {
 	display: block;
 	visibility: visible;
 }
