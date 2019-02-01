@@ -120,7 +120,7 @@ a {
 	Typography
 	########################################################
 */
-h1, li {
+h1, h2, li {
 	text-transform: uppercase;
 	line-height: 102px;
 }
@@ -129,4 +129,41 @@ li {
 }
 h1 {
 	font-size: 36px;
+}
+h2 {
+	font-size: 27px;
+}
+/*
+	#########################################################
+	Footer
+	#########################################################
+*/
+.space {	height: 500px; }
+.columns { border: solid 1px blue;}
+footer { border: dotted 1px black; }
+.column-images h2 {	border: dashed 1px green; }
+.column-images img {	border: dashed 1px purple;	}
+
+.grid-container {
+	display: grid;
+}
+footer {
+	height: 600px;
+	margin-bottom: 0;
+	grid-template-columns: repeat(4, 0.25fr);
+	grid-column-gap: 40px;
+	padding: 40px;
+}
+.columns {
+	text-align: center;
+}
+/* style column 4: images */
+.column-images {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(4, 0.25fr);
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+.column-images h2 {
+	grid-column: 1/4;
 }
