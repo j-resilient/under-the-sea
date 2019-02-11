@@ -133,6 +133,9 @@ h1 {
 h2 {
 	font-size: 27px;
 }
+p {
+	font-size: 22.5px;
+}
 /*
 	#########################################################
 	Footer
@@ -141,8 +144,8 @@ h2 {
 .space {	height: 500px; }
 .columns { border: solid 1px blue;}
 footer { border: dotted 1px black; }
-.column-images h2 {	border: dashed 1px green; }
-.column-images img {	border: dashed 1px purple;	}
+h2 {	border: dashed 1px green; }
+.column-list, .column-images img {	border: dashed 1px purple;	}
 
 .grid-container {
 	display: grid;
@@ -156,6 +159,27 @@ footer {
 }
 .columns {
 	text-align: center;
+}
+/* Style column 3: list */
+.column-list {
+	grid-template-columns: auto;
+	grid-template-rows: repeat(6, 0.24fr);
+}
+.column-list p {
+	align-self: center;
+	display: block;
+	height: 100%;
+	border-top: solid 1px red;
+	padding-top: 25px;
+}
+.column-list a {
+	vertical-align: middle;
+	display: inline;
+	padding: 0;
+	margin-top: 50px;
+}
+.column-list p:nth-child(2) {
+	border-top: 0px;
 }
 /* style column 4: images */
 .column-images {
