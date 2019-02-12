@@ -145,7 +145,7 @@ p {
 .columns { border: solid 1px blue;}
 footer { border: dotted 1px black; }
 h2 {	border: dashed 1px green; }
-.column-list, .column-images img {	border: dashed 1px purple;	}
+.column-articles, .column-list, .column-images img {	border: dashed 1px purple;	}
 
 .grid-container {
 	display: grid;
@@ -160,10 +160,19 @@ footer {
 .columns {
 	text-align: center;
 }
+/* Style column 2: articles */
+.column-articles {
+	grid-template-columns: auto;
+	grid-template-rows: 0.25fr, repeat(4, 0.25fr);
+}
+.column-articles a {
+	border-bottom: solid 1px red;
+	border-top: solid 1px red;
+}
 /* Style column 3: list */
 .column-list {
 	grid-template-columns: auto;
-	grid-template-rows: repeat(6, 0.24fr);
+	grid-template-rows: 0.25fr, repeat(5, 0.25fr);
 }
 .column-list p {
 	align-self: center;
