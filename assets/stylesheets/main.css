@@ -163,11 +163,22 @@ footer {
 /* Style column 2: articles */
 .column-articles {
 	grid-template-columns: auto;
-	grid-template-rows: 0.25fr, repeat(4, 0.25fr);
+	grid-template-rows: 0.25fr, repeat(2, 0.5fr);
+}
+.column-articles section {
+	margin-bottom: 40px;
 }
 .column-articles a {
-	border-bottom: solid 1px red;
-	border-top: solid 1px red;
+	height: auto;
+	width: 100%;
+	padding: 0;
+}
+.column-articles p {
+	padding-top: 20px;
+}
+.column-articles section:nth-child(3) {
+	border-top: solid red 1px;
+	padding-top: 20px;
 }
 /* Style column 3: list */
 .column-list {
