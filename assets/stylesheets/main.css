@@ -133,7 +133,7 @@ h1 {
 h2 {
 	font-size: 27px;
 }
-p {
+p, address, i {
 	font-size: 22.5px;
 }
 /*
@@ -145,20 +145,40 @@ p {
 .columns { border: solid 1px blue;}
 footer { border: dotted 1px black; }
 h2 {	border: dashed 1px green; }
-.column-articles, .column-list, .column-images img {	border: dashed 1px purple;	}
+.column-location, .column-articles, .column-list, .column-images img {	border: dashed 1px purple;	}
 
 .grid-container {
 	display: grid;
 }
 footer {
+	background-color: #37CACA;
 	height: 600px;
 	margin-bottom: 0;
 	grid-template-columns: repeat(4, 0.25fr);
 	grid-column-gap: 40px;
 	padding: 40px;
 }
-.columns {
-	text-align: center;
+/* Style column 1: location */
+.column-location {
+	grid-template-columns: auto;
+	grid-template-rows: 0.25fr, repeat(4, 0.25fr);
+}
+.column-location div {
+	margin: 10px;
+}
+address {
+	line-height: 33.75px;
+	display: inline;
+	margin-left: 55px;
+	vertical-align: middle;
+}
+#secondLine {
+	margin-left: 75px;
+}
+.icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 /* Style column 2: articles */
 .column-articles {
@@ -168,13 +188,19 @@ footer {
 .column-articles section {
 	margin-bottom: 40px;
 }
+.column-articles p {
+	display: block;
+	height: 100%;
+	line-height: 33.75px;
+}
 .column-articles a {
+	display: inline;
 	height: auto;
 	width: 100%;
 	padding: 0;
 }
 .column-articles p {
-	padding-top: 20px;
+	padding-top: 50px;
 }
 .column-articles section:nth-child(3) {
 	border-top: solid red 1px;
