@@ -130,10 +130,10 @@ li {
 h1 {
 	font-size: 36px;
 }
-h2 {
+h2, i {
 	font-size: 27px;
 }
-p, address, i {
+p, address {
 	font-size: 22.5px;
 }
 /*
@@ -142,10 +142,7 @@ p, address, i {
 	#########################################################
 */
 .space {	height: 500px; }
-.columns { border: solid 1px blue;}
-footer { border: dotted 1px black; }
-h2 {	border: dashed 1px green; }
-.column-location, .column-articles, .column-list, .column-images img {	border: dashed 1px purple;	}
+.column-images img {	border: dashed 1px purple;	}
 
 .grid-container {
 	display: grid;
@@ -180,6 +177,11 @@ address {
 	justify-content: space-around;
 	align-items: center;
 }
+.column-location div:nth-child(3) {
+	border-top: solid #C9F1F1 0.5px;
+	border-bottom: solid #C9F1F1 0.5px;
+	padding-top: 30px;
+}
 /* Style column 2: articles */
 .column-articles {
 	grid-template-columns: auto;
@@ -203,7 +205,7 @@ address {
 	padding-top: 50px;
 }
 .column-articles section:nth-child(3) {
-	border-top: solid red 1px;
+	border-top: solid #C9F1F1 0.5px;
 	padding-top: 20px;
 }
 /* Style column 3: list */
@@ -215,7 +217,7 @@ address {
 	align-self: center;
 	display: block;
 	height: 100%;
-	border-top: solid 1px red;
+	border-top: solid 0.5px #C9F1F1;
 	padding-top: 25px;
 }
 .column-list a {
@@ -236,4 +238,9 @@ address {
 }
 .column-images h2 {
 	grid-column: 1/4;
+}
+.column-images img {
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
 }
