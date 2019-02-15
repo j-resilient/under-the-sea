@@ -54,8 +54,10 @@ table {
 *, *:before, *:after {
 	box-sizing: border-box;
 }
-body {
+body, html {
 	margin: 0;
+	height: 100%;
+	width: 100%;
 }
 /*
 	########################################################
@@ -138,11 +140,25 @@ p, address {
 }
 /*
 	#########################################################
+	Hero Image
+	#########################################################
+*/
+.hero-image {
+	background-image: url(workspace/under-the-sea/assets/images/hero-wave-emiliano-arano.jpg);
+	height: 50%;
+	background-position: center;
+}
+
+/*
+	#########################################################
+	Button
+	#########################################################
+*/
+/*
+	#########################################################
 	Footer
 	#########################################################
 */
-.space {	height: 500px; }
-
 .grid-container {
 	display: grid;
 }
@@ -153,6 +169,7 @@ footer {
 	grid-template-columns: repeat(4, 0.25fr);
 	grid-column-gap: 40px;
 	padding: 40px;
+	padding-bottom: 0;
 }
 /* Style column 1: location */
 .column-location {
