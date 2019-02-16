@@ -66,7 +66,6 @@ body, html {
 header {
 	height: 102px;
 	background-color: #FFAFB5;
-	transition: background-color 1s ease;
 	background: linear-gradient(to right, #C9F1F1, #FFE7B3, #FFAFB5);
 	display: flex;
 	justify-content: space-around;
@@ -105,7 +104,12 @@ a {
 /* Style li */
 /*	The order here matters: if you style dropdown li before you set the
 		hover the dropdown li will overwrite the hover */
+	li {
+		transition: background-color 1s ease;
+		background-color: transparent;
+	}
 	.dropdown li {
+		transition: background-color 1s ease;
 		background-color: rgba(249, 150, 145, 0.5);
 	}
 	.dropdown li:nth-child(2)	{
@@ -158,12 +162,38 @@ p, address {
 	color: white;
 	transform: translate(-50%, -50%);
 }
-
+.hero-text p {
+	line-height: 33.75px;
+}
+.hero-text button {
+	margin: 67.5px 10px 0 10px;
+}
+.hero-text button:nth-child(3) {
+	transition: background-color 1s ease;
+	background-color: #F99691;
+}
+.hero-text button:nth-child(3):hover {
+	transition: background-color 1s ease;
+	background-color: transparent;
+}
 /*
 	#########################################################
 	Button
 	#########################################################
 */
+button {
+	font-size: 22.5px;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	color: white;
+	transition: background-color 1s ease;
+	background-color: transparent;
+	border: solid white 0.5px;
+}
+button:hover {
+	transition: background-color 1s ease;
+	background-color: #F99691;
+}
 /*
 	#########################################################
 	Footer
