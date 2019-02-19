@@ -289,6 +289,27 @@ h3 {
 
 /*
 	#########################################################
+	Row of Pictures
+	#########################################################
+*/
+.picture-row {
+	height: 80%;
+}
+.picture-row h2 {
+	text-align: center;
+}
+.rowPictures {
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+}
+.rowPictures div {
+	border: dotted 0.5px green;;
+	width: 20%;
+	height: 50%;
+}
+/*
+	#########################################################
 	Button
 	#########################################################
 */
