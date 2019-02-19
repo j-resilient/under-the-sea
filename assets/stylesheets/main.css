@@ -63,17 +63,16 @@ body, html {
 	Header and Navbar
 	########################################################
 */
+.flex-container {
+	display: flex;
+}
 header {
 	height: 102px;
 	background-color: #FFAFB5;
 	background: linear-gradient(to right, #C9F1F1, #FFE7B3, #FFAFB5);
-	display: flex;
 	justify-content: space-around;
 }
 /* Navbar structure */
-ul {
-  display: flex;
-}
 a {
   display: block;
   height: 100%;
@@ -82,7 +81,6 @@ a {
   padding: 0 20px;
 }
 .dropdown  {
-  display: flex;
   flex-direction: column;
 }
 .level3-container {
@@ -139,8 +137,11 @@ h1 {
 h2, i {
 	font-size: 27px;
 }
-p, address {
+p, h3, address {
 	font-size: 22.5px;
+}
+h3 {
+	text-transform: uppercase;
 }
 /*
 	#########################################################
@@ -177,6 +178,68 @@ p, address {
 	transition: background-color 1s ease;
 	background-color: transparent;
 }
+/*
+	#########################################################
+	Article Snippets
+	#########################################################
+*/
+.snippets {
+	justify-content: space-around;
+	background: transparent;
+	height: 35%;
+	width: 100%;
+	position: absolute;
+	margin-top: -5%;
+	z-index: 2;
+}
+.snippets div {
+	flex-direction: column;
+	justify-content: space-around;
+	transition: background-color 0.5s ease;
+	background-color: white;
+	height: 100%;
+	width: 20%;
+	padding: 2%;
+	text-align: center;
+	/*box-shadow: 0.5px 0.5px 20px #888888;*/
+}
+.snippets div:nth-child(2) {
+	background-color: #C9F1F1;
+}
+.snippets div:nth-child(odd):hover {
+	transition: background-color 0.5s ease;
+	background-color: #C9F1F1;
+}
+.snippets div:nth-child(2) > i,
+.snippets div:nth-child(2) > span,
+.snippets div:nth-child(odd):hover > i,
+.snippets div:nth-child(odd):hover > span {
+	transition: background-color 0.5s ease;
+	background-color: white;
+}
+.snippet-line {
+	transition: background-color 0.5s ease;
+	background-color: #F99691;
+	width: 20%;
+	height: 5px;
+	margin: 0 auto 10px auto;
+	border-radius: 20%;
+}
+.fas {
+	transition: background-color 0.5s ease;
+	background-color: #F99691;
+	padding: 20px;
+	width: 25%;
+	height: auto;
+	margin: 0 auto 10px auto;
+	border-radius: 50%;
+}
+#space {
+	width: 100%;
+	height: 40%;
+	background-color: #FFE7B3;
+}
+
 /*
 	#########################################################
 	Button
