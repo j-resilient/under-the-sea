@@ -58,6 +58,12 @@ body, html {
 	margin: 0;
 	height: 100%;
 }
+strong {
+	font-weight: 800;
+}
+cite, em {
+	font-style: italic;
+}
 /*
 	########################################################
 	Header and Navbar
@@ -322,6 +328,80 @@ img {
 }
 .pic-row-text {
 	text-align: center;
+}
+/*
+	#########################################################
+	Hero with Quotes
+	#########################################################
+*/
+.quote-hero {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+	url("../images/hero2.jpg");
+	height: 90%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.quote-hero-text h1, quote-hero-text a {
+	color: white;
+}
+.quote-hero-text h1 {
+	text-align: center;
+	padding-top: 5%;
+}
+.quote-hero-text span {
+	display: inline-block;
+	background-color: white;
+	width: 10%;
+	height: 5px;
+	margin: 0 auto 10% 45%;
+	border-radius: 20%;
+}
+.quotes-container {
+	justify-content: space-around;
+}
+.quotes {
+		width: 40%;
+}
+.quotes-p {
+	background-color: white;
+	padding: 20px;
+	border-radius: .4em;
+	position: relative;
+}
+.quotes-p:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+.quotes img {
+	width: 30%;
+	height: auto;
+	margin-top: 25px;
+	border-radius: 50%;
+	float: left;
+}
+.speaker {
+	color: white;
+	margin-top: 8%;
+	width: 65%;
+	float: right;
+	font-weight: 800px;
+}
+.quote-hero-text a {
+	margin-left: 42%;
+	margin-top: 3%;
 }
 /*
 	#########################################################
