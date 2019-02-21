@@ -499,7 +499,7 @@ footer {
 	grid-template-columns: repeat(4, 0.25fr);
 	grid-column-gap: 40px;
 	padding: 40px;
-	padding-bottom: 0;
+	padding-bottom: 10%;
 }
 .column {
 	margin-bottom: 10px;
