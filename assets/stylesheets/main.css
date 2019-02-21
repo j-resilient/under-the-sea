@@ -261,15 +261,23 @@ h3 {
 	padding: 5% 10%;
 }
 .article-grid h1 {
-	margin-bottom: 5%;
 	text-align: center;
+	width: 100%;
+}
+.article-grid span {
+	display: inline-block;
+	background-color: #C9F1F1;
+	width: 10%;
+	height: 5px;
+	margin: 0 auto 5% 45%;
+	border-radius: 20%;
 }
 .article-grid a {
 	transition: background-color 0.5s ease;
 	color: black;
-	border: solid 0.5px black;
+	border: solid 0.5px #C9F1F1;
 	margin-top: 3%;
-	margin-left: 37.5%;
+	margin-left: 40%;
 }
 .article-grid a:hover {
 	transition: background-color 0.5s ease;
@@ -279,6 +287,8 @@ h3 {
 }
 .grid-articles {
 	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto;
 }
@@ -402,6 +412,57 @@ img {
 .quote-hero-text a {
 	margin-left: 42%;
 	margin-top: 3%;
+}
+/*
+	#########################################################
+	Posts Snippets
+	#########################################################
+*/
+.posts {
+	height: 100%;
+	width: 100%;
+}
+.posts h1 {
+	text-align: center;
+	margin-top: 5%;
+}
+.posts span {
+	display: inline-block;
+	background-color: #37CACA;
+	width: 10%;
+	height: 5px;
+	margin: 0 auto 5% 45%;
+	border-radius: 20%;
+}
+.posts-grid {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(5, auto);
+	grid-column-gap: 4%;
+	grid-row-gap: 2%;
+}
+.dot-link {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	color: #37CACA;
+}
+.posts-grid .button {
+	color: #37CACA;
+	border-color: #37CACA;
+}
+.fa-user {
+	color: #37CACA;
+}
+.posts-grid .button {
+	width: 33%;
+	justify-self: center;
+}
+.posts-grid .button:hover {
+	color: white;
+	background-color: #37CACA;
 }
 /*
 	#########################################################
